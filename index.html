@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list</title>
+    <link rel="icon" href="to-do.jpeg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- file javasript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <!-- //file javasript// -->
+</head>
+
+<body>
+    <div class="full">
+        <!-- CENTER DIV -->
+        <div id="perant">
+            <!-- TASKS TABLE -->
+            <div class="tasks_table">
+                <!-- HEADER -->
+                <div class="header">
+                    <h1>مهامي</h1>
+                    <button id="add-button" class="circular">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <!-- //HEADER// -->
+                <!-- TASKS -->
+                <div id="tasks">
+                    <!-- TASK -->
+                    <div class="task">
+                        <!-- TASK INFO -->
+                        <div class="info">
+                            <h2>قراءة كتاب</h2>
+                            <div class="date">
+                                <span>
+                                    10/10/2024
+                                </span>
+                            </div>
+                        </div>
+                        <!-- //TASK INFO// -->
+                        <!-- TASK ACTION -->
+                        <div class="action">
+                            <button class="circular" style="background-color: rgb(114, 0, 0);">
+                                <i class="fa-solid fa-trash"></i>
+                                <!-- delete -->
+                            </button>
+                            <button class="circular" style="background-color: rgb(0, 114, 0);">
+                                <i class="fa-solid fa-check"></i>
+                                <!-- check -->
+                            </button>
+                            <button class="circular" style="background-color: rgb(0, 0, 114);">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <!-- edit -->
+                            </button>
+                        </div>
+                        <!-- //TASK ACTION// -->
+                    </div>
+                    <div class="task">
+                        <!-- TASK INFO -->
+                        <div class="info">
+                            <h2>قراءة كتاب</h2>
+                            <div class="date">
+                                <span>
+                                    10/10/2024
+                                </span>
+                            </div>
+                        </div>
+                        <!-- //TASK INFO// -->
+                        <!-- TASK ACTION -->
+                        <div class="action">
+                            <button class="circular" style="background-color: rgb(114, 0, 0);">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            <button class="circular" style="background-color: rgb(0, 114, 0);">
+                                <i class="fa-solid fa-check"></i>
+                            </button>
+                            <button class="circular" style="background-color: rgb(0, 0, 114);">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+                        </div>
+                        <!-- //TASK ACTION// -->
+                        <!-- //TASK// -->
+                    </div>
+                    <!-- //TASKS// -->
+                </div>
+                <!-- //TASKS TABLE// -->
+            </div>
+            <!-- //CENTER DIV// -->
+        </div>
+        
+</body>
+        <!-- js -->
+        <script src="script.js"></script>
+        <!-- js -->
+</html>

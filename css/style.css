@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgb(30, 0, 77);
+}
+
+.full {
+    direction: rtl;
+    height: 100vh;
+}
+
+#perant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(92, 52, 155);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+h1 {
+    display: inline;
+}
+
+button#add-button {
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    box-shadow: 0px 3px 5px rgba(168, 168, 168, 0.38);
+}
+.circular {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    line-height: 0;
+}
+
+.tasks_table {
+    width: 60%;
+    background-color: rgb(171, 176, 171);
+    height: fit-content;
+    margin-top: 10%;
+}
+
+#tasks {
+    padding: 4px;
+    height: initial;
+}
+
+.task {
+    display: flex;
+    padding: 4px;
+    justify-content: space-around;
+    background-color: white;
+    border-bottom: solid black 1px;
+    transition: box-shadow0.2s;
+    margin: 5px;
+    height: 70px;
+}
+@media (max-width:767px) and (max-width:992px) {
+    .tasks_table {
+        width: 100%;
+    }
+    .task{
+        height: 140px;
+    }
+    .info{
+        line-height: 20px;
+        width: 30%;
+    }
+    .info h2 {
+        margin-top: 25px;
+    }
+    .info .date {
+        margin-top: 40px;
+    }
+    .action {
+        flex-direction: column-reverse;
+}
+}
+
+.done {
+    background-color: rgb(154, 253, 160);
+}
+.task:hover {
+    box-shadow: 0px 3px 15px rgba(97, 97, 97, 0.843);
+}
+
+.info {
+    line-height: 38px;
+    width: 70%;
+}
+
+.date {
+    color: rgba(97, 97, 97, 0.843);
+}
+
+.action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    color: white;
+}
+
+.action button {
+    color: white;
+}
